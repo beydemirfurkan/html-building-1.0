@@ -1,0 +1,266 @@
+body.index {
+    background: #131314;
+    font-family: 'Mulish', sans-serif;
+}
+
+.main {
+	padding-top: 100px;
+}
+header {
+	.nav-link {
+		color: #fff;
+	}
+}
+.h-100vh {
+	height: 100vh;
+}
+.hero-wrap {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        content: '';
+        background:black 0;
+        opacity: 0.6;
+    }
+
+}
+#fp-nav.fp-left {
+	width: 5vw;
+	z-index: 999;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	ul {
+		li {
+			a {
+				span {
+					background: #fff;
+				}
+			}
+			a.active {
+				span {
+					height: 12px;
+					width: 12px;
+					margin: -6px 0 0 -6px;
+					border-radius: 100%;
+					background: #1959ea;
+					&::after {
+						position: absolute;
+						content: "";
+						top: -5px;
+						bottom: -5px;
+						left: -5px;
+						right: -5px;
+						border-radius: 50%;
+						border: 1px solid rgba(255, 255, 255, 0.395);
+					}
+				}
+			}
+		}
+	}
+}
+.hero-line {
+	height: 80%;
+	top: 10%;
+	width: 5vw;
+	border-color: #939393 !important;
+	z-index: 999;
+}
+.messag {
+	right: 5vw;
+	z-index: 11;
+	.wr {
+		border-top-left-radius: 13px;
+		border-top-right-radius: 13px;
+		font-size: 13px;
+	}
+}
+
+.three-arrow {
+	.bi-chevron-left {
+		left: -30px;
+	}
+	.bi-chevron-right {
+		right: -30px;
+	}
+}
+
+.hero-img {
+	object-fit: cover;
+	object-position: top left;
+}
+
+.span-check {
+	width: 15px;
+	height: 15px;
+	line-height: 10px;
+	text-align: center;
+	border: 1px solid #fff;
+	i {
+		display: none;
+	}
+}
+input {
+	&:checked {
+		+ {
+			span {
+				border: 1px solid #d21e27;
+				i {
+					color: #d21e45;
+					display: inline;
+				}
+			}
+		}
+	}
+}
+.s-item {
+	height: 300px;
+	.overlay {
+		background-image: linear-gradient(to top, #000000, #3b3b3b3f, #77777700, #b9b9b900, rgba(0, 0, 0, 0));
+		border-radius: 10px;
+	}
+}
+
+.btn-dark-blue {
+	background: #1959ea;
+	color: white !important;
+	border: 2px solid #1959ea;
+    transition: all .4s ease-in-out;
+    padding: .5rem 2rem;
+    font-weight: 500;
+	&:hover {
+		background: transparent;
+		border: 2px solid white;
+	}
+}
+
+
+.forest-sec-inner {
+    width: 600px;
+    max-width: 100%;
+    background: #131314;
+    padding: 3rem;
+    border-radius: 25px;
+    span.mini-forest-title {
+        color: #afea1e; 
+        font-weight: bold;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-bottom: 15px;
+    }
+}
+
+.footer-social-icon {
+    padding: 1rem 0rem;
+    span {
+        margin-right: 5px;
+        background: #000000;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        color: white;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background: #132b7c;
+        }
+    }
+}
+
+
+
+
+
+.s-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 9999;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: .5rem .8rem;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.s-right {
+    @extend .s-left;
+    left: 88%;
+}
+
+
+.slider-carousel-2 {
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        .p-capsul {
+            opacity: .9;
+            height: 50%;
+            span {
+                display: block;
+            }
+            
+        }
+    }
+    .p-capsul {
+        transition: all .3s ease-in-out;
+        text-align: center;
+        position: absolute;
+        z-index: 9999;
+        width: 100%;
+        height: 20%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: black;
+        opacity: .7;
+
+        span {
+            display: none;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 20px;
+            line-height: 18px;
+        }
+    }
+}
+
+
+.s2-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 99999;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: .6rem 1rem;
+}
+
+.s2-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 99999;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: .6rem 1rem;
+}

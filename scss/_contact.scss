@@ -1,0 +1,19 @@
+body.contact {
+    background: #131314;
+    font-family: 'Mulish', sans-serif;
+
+    .border-line {
+        display: block;
+        width: 82px;
+        padding-top: 0px;
+        border-bottom: 2px solid #1959ea;
+        margin-bottom: 30px;
+    }
+    .contact-page-form-inner {
+        border-radius: 25px;
+        padding: 2rem .5rem;
+        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 44px;
+        border: 1px solid white;
+        
+    }
+}

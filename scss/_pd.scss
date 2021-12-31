@@ -1,0 +1,23 @@
+body.detail {
+    background: #131314;
+    font-family: 'Mulish', sans-serif;
+    p {
+        color: #7f7f7f;
+    }
+    strong {
+        color: white;
+        font-weight: bold;
+    }
+
+    .project-detail-gallery-carousel  {
+        .owl-carousel {
+            .owl-nav {
+                display: none;
+            }
+        }
+    }
+
+  }
+
+
+

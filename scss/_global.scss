@@ -1,0 +1,161 @@
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.zindex-n1 {
+	z-index: -1;
+}
+.zindex-1 {
+	z-index: 1;
+}
+.zindex-5 {
+	z-index: 5;
+}
+.zindex-9 {
+	z-index: 9;
+}
+.letter-n1 {
+	letter-spacing: -1px;
+}
+.letter-n2 {
+	letter-spacing: -2px;
+}
+.fs-07 {
+	font-size: 0.7rem;
+}
+.fs-08 {
+	font-size: 0.8rem;
+}
+.fs-09 {
+	font-size: 0.9rem;
+}
+.pointer {
+	cursor: pointer;
+}
+.text-gray {
+	color: #c8c7c7;
+}
+.color-gree {
+	color: #afea1e;
+}
+.bg-gree {
+	background-color: #afea1e;
+}
+.border-gree {
+	border-color: #afea1e !important;
+}
+
+p {
+    color: #dbdde5;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.pholder-white {
+	&::placeholder {
+		color: #fff;
+	}
+}
+
+.mobile-nav-button {
+	width: 35px;
+	position: absolute;
+	margin: 2rem;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+	cursor: pointer;
+	width: 35px;
+	height: 30px;
+	.mobile-nav-button__line {
+		width: 100%;
+		height: 4px;
+		background: #fff;
+		position: relative;
+		transition: 1s ease;
+		&:nth-of-type(2) {
+			margin: 0.5rem 0;
+		}
+	}
+	.mobile-nav-button__line--1 {
+		transform: rotate(45deg);
+		top: 13px;
+		position: absolute;
+	}
+	.mobile-nav-button__line--2 {
+		display: none;
+	}
+	.mobile-nav-button__line--3 {
+		transform: rotate(135deg);
+		top: 13px;
+		position: absolute;
+	}
+}
+.mobile-menu {
+	display: block;
+	max-width: 500px;
+	width: 100%;
+	right: 100%;
+	height: 100vh;
+	background: #212529;
+	position: absolute;
+	z-index: 9998;
+	transition: 0.6s ease;
+	top: 0;
+	opacity: 0;
+	ul {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 0;
+		li {
+			list-style: none;
+			a {
+				width: 100%;
+				max-width: 1200px;
+				margin: 0 auto;
+				display: block;
+				text-align: center;
+				text-decoration: none;
+				color: #fff;
+				font-size: 2.5rem;
+				font-weight: bold;
+				overflow: hidden;
+				position: relative;
+				&:after {
+					content: "";
+					background: #0e0e0e;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					right: -100%;
+					top: 0;
+					z-index: -1;
+					transition: 0.4s ease;
+				}
+				&:hover {
+					color: #fff;
+					&:after {
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+	img {
+		position: absolute;
+		width: 150px;
+		display: block;
+		left: 50%;
+		top: 3rem;
+		transform: translatex(-50%);
+		padding: 0;
+		text-align: center;
+	}
+}
+.mobile-menu--open {
+	right: 0;
+	opacity: 1;
+}
+
+
